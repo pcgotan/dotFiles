@@ -198,6 +198,11 @@ bindsym $mod+r mode "resize"
 
 
 bar {
+	# Auto hide the bar, press mod to show it
+	mode hide
+        hidden_state hide
+        modifier Mod
+	
         status_command i3status
         status_command exec /home/chouhan/.config/i3status/net-speed.sh
 		colors {
